@@ -1,0 +1,57 @@
+# ---------------------------------------------------------------------------
+# Secrets and local configuration.
+#
+# This repository is documentation only, so most of these should never appear.
+# They are listed because .gitignore is cheap and the cost of being wrong once
+# is high. Note that .gitignore is not a security boundary: it stops an
+# accidental `git add`, and does nothing about a secret pasted into a tracked
+# file. The real control is tools/check-public-safe.sh and the pre-push hook.
+# ---------------------------------------------------------------------------
+
+.env
+.env.*
+*.env
+secrets.*
+credentials
+credentials.*
+.netrc
+
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+*.asc
+*.gpg
+
+.aws/
+.gcloud/
+.azure/
+*service-account*.json
+*-credentials.json
+.ssh/
+
+# Generated assets never belong here; the guard fails the push if any appear
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.svg
+*.psd
+*.ai
+
+# Local tool and editor state that can carry paths or machine details
+.claude/
+.vscode/
+.idea/
+*.local
+*.local.json
+.direnv/
+.envrc
+__pycache__/
+.venv/
+
+.DS_Store
+Thumbs.db

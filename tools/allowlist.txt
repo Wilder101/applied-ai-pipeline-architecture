@@ -1,0 +1,3 @@
+# Known-benign values the guard would otherwise flag.
+# One exact value per line, with a reason. Keep this short: every entry is a
+# place the guard has been told to look away.
