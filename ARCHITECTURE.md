@@ -11,9 +11,16 @@ One answers "all of the artwork." One answers "none of it." The third is still
 the first answer, and that is correct for what it makes.
 
 **Stated up front, because a reader could reasonably assume otherwise: in the
-mature product line the image model draws nothing at all.** Terrain is rendered
+mature product line, no generative model renders the output.** Terrain is drawn
 programmatically from real public elevation data, and even the paper texture is
-procedural. There is no generative model anywhere in that path.
+procedural.
+
+That is a claim about what draws the artwork. It is not a claim about how the
+software was built. **All three ventures were engineered with AI assistance
+throughout**: the code, the decision records, and the reviews of both.
+[0006](adr/0006-execution-environment-split.md) is about exactly that, and it
+is why this is applied AI rather than generative AI. The two questions get
+conflated constantly, including by me in an earlier version of this page.
 
 ---
 
@@ -90,7 +97,7 @@ model's role, because every failure was a model failure.**
 
 ---
 
-## 4. Generation two: the model draws nothing
+## 4. Generation two: the model draws nothing, but still writes the code
 
 ```
 config -> fetch vector data -> fetch elevation -> shared projection
@@ -132,7 +139,8 @@ trim line carries no seam.
 extent, zoom, smoothing parameters, seeds, attribution, and which labels were
 selected versus actually drawn.
 
-**No generative model appears anywhere in this path.**
+**No generative model renders any part of this output.** The pipeline that
+produces it was written with AI assistance, like everything else here.
 
 ---
 

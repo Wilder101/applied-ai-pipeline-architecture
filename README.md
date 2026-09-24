@@ -23,9 +23,15 @@ The through-line, if you want the conclusion before the evidence:
 > world, a model is the wrong tool at any quality level, and the gate has to be
 > mechanical against a real source.
 
-One of these ventures now runs with no generative model in its pipeline at all.
+In one of these ventures, no generative model renders the output any more.
 That was not an ideological choice. It was the result of every corrective round
 reducing the model's role, because every failure was a model failure.
+
+Worth separating, because the two get conflated: that is a statement about what
+draws the artwork. **All three ventures were built with AI assistance
+throughout**, and that has not changed in any of them. Which tool renders a
+file and which tool writes the software that renders it are different
+questions, and only the first one has an interesting answer here.
 
 ## What this is not
 
